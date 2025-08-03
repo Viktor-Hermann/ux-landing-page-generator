@@ -1,8 +1,8 @@
-# 🚀 Appiq Flutter Workflow v2.1.2
+# 🔒 Appiq Flutter Workflow v2.1.2 - Private Release
 
 **Professional Flutter development with AI-powered agent coordination, intelligent parallel execution, and independent agent mode.**
 
-[![NPM Version](https://img.shields.io/npm/v/@appiq/flutter-workflow?style=flat-square&logo=npm)](https://www.npmjs.com/package/@appiq/flutter-workflow)
+[![Private Release](https://img.shields.io/badge/Release-Private-red.svg?style=flat-square)](https://github.com/Viktor-Hermann/appiq-flutter-workflow/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 [![Support Development](https://img.shields.io/badge/Support-PayPal-ff3f59.svg?style=flat-square&logo=paypal)](https://paypal.me/vhermann)
 
@@ -36,11 +36,29 @@
 
 ## 🚀 Quick Start
 
-### Installation
+### 🔒 Private Installation
 
-```bash
-npm install -g @appiq/flutter-workflow
-```
+**This is now a private package for controlled distribution.**
+
+See [PRIVATE-INSTALLATION.md](PRIVATE-INSTALLATION.md) for detailed setup instructions.
+
+#### **Quick Setup:**
+
+1. **Configure GitHub Packages:**
+   ```bash
+   echo "@viktor-hermann:registry=https://npm.pkg.github.com" >> ~/.npmrc
+   echo "//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN" >> ~/.npmrc
+   ```
+
+2. **Install:**
+   ```bash
+   npm install -g @viktor-hermann/appiq-flutter-workflow
+   ```
+
+3. **Or install directly from repository:**
+   ```bash
+   npm install -g https://github.com/Viktor-Hermann/appiq-flutter-workflow.git
+   ```
 
 ### Option 1: Independent Agent Usage (NEW!)
 
@@ -69,10 +87,10 @@ For complete feature development:
 
 ```bash
 # Initialize workflow system
-npx @appiq/flutter-workflow install
+npx @viktor-hermann/appiq-flutter-workflow install
 
 # Create new feature
-npx @appiq/flutter-workflow create-feature user-authentication
+npx @viktor-hermann/appiq-flutter-workflow create-feature user-authentication
 
 # Start feature development with FeatureMaster
 @feature-manager "Start development for user-authentication feature"
@@ -274,14 +292,14 @@ Appiq Flutter Workflow is a comprehensive, agent-based development system that a
 cd your-flutter-project
 
 # Install Appiq Flutter Workflow
-npx @appiq/flutter-workflow install
+npx @viktor-hermann/appiq-flutter-workflow install
 ```
 
 ### Or install globally
 
 ```bash
 # Install globally for easier access
-npm install -g @appiq/flutter-workflow
+npm install -g @viktor-hermann/appiq-flutter-workflow
 
 # Then use anywhere
 appiq-workflow install
@@ -327,7 +345,7 @@ your-flutter-project/
 ### 1. Feature Creation
 ```bash
 # Create a new feature
-npx @appiq/flutter-workflow create-feature livestream
+npx @viktor-hermann/appiq-flutter-workflow create-feature livestream
 
 # Or manually create in docs/features/livestream.md
 ```
@@ -394,16 +412,16 @@ I want a livestream function like TikTok where users can:
 ### CLI Commands
 ```bash
 # Install workflow system
-npx @appiq/flutter-workflow install
+npx @viktor-hermann/appiq-flutter-workflow install
 
 # Check installation status  
-npx @appiq/flutter-workflow status
+npx @viktor-hermann/appiq-flutter-workflow status
 
 # Create new feature
-npx @appiq/flutter-workflow create-feature <feature-name>
+npx @viktor-hermann/appiq-flutter-workflow create-feature <feature-name>
 
 # Show help
-npx @appiq/flutter-workflow --help
+npx @viktor-hermann/appiq-flutter-workflow --help
 ```
 
 ### Agent Commands (in IDE)
@@ -581,7 +599,8 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guid
 - **Issues**: Report bugs and request features
 - **Documentation**: Comprehensive guides and examples
 - **Community**: Join discussions and get support
-- **NPM Package**: [npmjs.com/@appiq/flutter-workflow](https://www.npmjs.com/package/@appiq/flutter-workflow)
+- **GitHub Repository**: [Viktor-Hermann/appiq-flutter-workflow](https://github.com/Viktor-Hermann/appiq-flutter-workflow)
+- **Private Package**: Available via GitHub Packages and direct installation
 
 ## 🏢 About Appiq Solutions
 
