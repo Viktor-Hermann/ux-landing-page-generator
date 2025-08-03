@@ -10,7 +10,7 @@ integration: ${INTEGRATION_STATUS:open}
 status: ${OVERALL_STATUS:open}
 created: ${CREATED_DATE}
 updated: ${UPDATED_DATE}
-completion: ${COMPLETION_PERCENTAGE:0}%
+completion: ${COMPLETION_PERCENTAGE:0}
 current_agent: ${CURRENT_AGENT:none}
 current_phase: ${CURRENT_PHASE:initialization}
 ---
@@ -160,8 +160,8 @@ ${ADDITIONAL_NOTES:Additional notes, assumptions, or constraints.}
 
 ---
 
-**🤖 Managed by FeatureMaster** | **📄 Auto-updated by AppIQ Workflow System**  
+**🤖 Managed by FeatureMaster** | **📄 Auto-updated by Appiq Workflow System**  
 **📞 Commands**: Use `*help` with FeatureMaster for available commands  
-**💾 State File**: `docs/features/${FEATURE_NAME}_state.json`  
-**📋 Tasks**: `docs/tasks/${FEATURE_NAME}_tasks.md`  
-**📈 History**: `docs/tasks/${FEATURE_NAME}_history.md`
+**💾 State File**: `docs/features/${FEATURE_NAME}/${FEATURE_NAME}_state.json`  
+**📋 Tasks**: `docs/features/${FEATURE_NAME}/${FEATURE_NAME}_tasks.md`  
+**📈 History**: `docs/features/${FEATURE_NAME}/${FEATURE_NAME}_history.md`

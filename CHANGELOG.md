@@ -5,6 +5,71 @@ All notable changes to Appiq Flutter Workflow will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.3] - 2025-08-03
+
+### 📁 **Feature Organization & Structure Enhancement**
+
+**ORGANIZED DEVELOPMENT** - Enhanced feature management with organized directory structure and comprehensive auto-generated tracking files.
+
+### ✨ New Features
+
+#### 🗂️ **Organized Feature Structure**
+- **Feature Subdirectories**: Each feature gets its own organized folder structure
+- **Auto-Generated Tracking**: Complete state, task, and history files created automatically
+- **Clean Organization**: No more cluttered docs/features directory
+- **Template System**: Comprehensive templates for state, tasks, and history tracking
+
+#### 📊 **Enhanced File Organization**
+```
+docs/features/
+├── feature-name/
+│   ├── feature-name.md          # Main feature documentation
+│   ├── feature-name_state.json  # Auto-generated state tracking
+│   ├── feature-name_tasks.md    # Auto-generated task breakdown
+│   └── feature-name_history.md  # Auto-generated development history
+├── active/                      # Active features organization
+├── completed/                   # Completed features archive
+├── archived/                    # Archived features storage
+└── feature-template.md          # Master template
+```
+
+#### 🔧 **Improved CLI Commands**
+- **Enhanced create-feature**: Creates organized feature directories automatically
+- **Template Installation**: Installs comprehensive template system
+- **Directory Organization**: Auto-creates organization subdirectories
+- **Better User Experience**: Clear feedback and next steps guidance
+
+### 🚀 Benefits
+
+#### 📋 **Better Organization**
+- **No Directory Clutter**: Features organized in dedicated subdirectories
+- **Complete Tracking**: Every feature gets full state, task, and history tracking
+- **Easy Navigation**: Clear structure for finding feature-related files
+- **Scalability**: Supports hundreds of features without clutter
+
+#### 🤖 **Enhanced Automation**
+- **Auto-Generated Files**: State, tasks, and history files created automatically
+- **Template System**: Comprehensive templates ensure consistency
+- **Smart Organization**: Features can be moved between active/completed/archived
+- **State Preservation**: All tracking files preserved across feature lifecycle
+
+### 🔄 Migration & Compatibility
+
+#### 📈 **Automatic Migration**
+- Existing features work unchanged
+- New structure available for new features
+- Gradual migration supported
+- Full backward compatibility
+
+### 📚 Enhanced Documentation
+
+- Updated feature creation guide with new directory structure
+- Comprehensive template examples
+- Clear organization guidelines
+- Migration instructions for existing projects
+
+---
+
 ## [2.1.2] - 2025-08-03
 
 ### 🧠 Context Management & State Resilience

@@ -6,7 +6,8 @@
 
 1. **Copy the template:**
    ```bash
-   cp docs/features/feature-template.md docs/features/my-new-feature.md
+   mkdir docs/features/my-new-feature
+   cp docs/features/feature-template.md docs/features/my-new-feature/my-new-feature.md
    ```
 
 2. **Edit your feature:**
@@ -68,11 +69,11 @@ The FeatureMaster will:
 When you start feature development, the system automatically creates:
 
 ### **📊 Task Management:**
-- `docs/tasks/{feature-name}_tasks.md` - Detailed task breakdown
-- `docs/tasks/{feature-name}_history.md` - Complete development history
+- `docs/features/{feature-name}/{feature-name}_tasks.md` - Detailed task breakdown
+- `docs/features/{feature-name}/{feature-name}_history.md` - Complete development history
 
 ### **💾 State Management:**
-- `docs/features/{feature-name}_state.json` - Crash-safe state tracking
+- `docs/features/{feature-name}/{feature-name}_state.json` - Crash-safe state tracking
 - Automatic backups every 5 minutes
 - Recovery checkpoints at major milestones
 
@@ -91,12 +92,13 @@ The system automatically excludes these files from feature detection:
 - `*_state.json` - State management files
 - `*_history.md` - History files
 - `*_tasks.md` - Task files
+- `active/`, `completed/`, `archived/` - Organization directories
 
 ### **✅ Detected Features:**
-- `user-authentication.md` ✅
-- `shopping-cart.md` ✅ 
-- `payment-processing.md` ✅
-- Any `.md` file that's not a template or tracking file
+- `docs/features/user-authentication/user-authentication.md` ✅
+- `docs/features/shopping-cart/shopping-cart.md` ✅ 
+- `docs/features/payment-processing/payment-processing.md` ✅
+- Any feature directory with main `.md` file
 
 ## 📋 Feature File Structure
 
