@@ -1,5 +1,5 @@
 {
-  "name": "@appiq/flutter-workflow",
+  "name": "@viktor-hermann/appiq-flutter-workflow",
   "version": "2.1.2",
   "description": "🚀 Professional Flutter development with AI-powered agent coordination & intelligent parallel execution - Complete workflow system with crash recovery and state management by Appiq Solutions",
   "main": "bin/cli.js",
@@ -68,18 +68,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/your-username/appiq-flutter-workflow.git"
+    "url": "git+https://github.com/Viktor-Hermann/appiq-flutter-workflow.git"
   },
   "bugs": {
-    "url": "https://github.com/appiq-solutions/flutter-workflow/issues"
+    "url": "https://github.com/Viktor-Hermann/appiq-flutter-workflow/issues"
   },
-  "homepage": "https://github.com/appiq-solutions/flutter-workflow#readme",
+  "homepage": "https://github.com/Viktor-Hermann/appiq-flutter-workflow#readme",
   "funding": {
     "type": "paypal",
     "url": "https://paypal.me/vhermann"
   },
   "publishConfig": {
-    "access": "public",
-    "registry": "https://registry.npmjs.org/"
+    "access": "restricted",
+    "registry": "https://npm.pkg.github.com"
   }
 }
