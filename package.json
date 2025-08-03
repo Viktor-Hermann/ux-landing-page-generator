@@ -1,10 +1,10 @@
 {
-  "name": "@viktor-hermann/appiq-flutter-workflow",
-  "version": "2.1.3",
-  "description": "🚀 Professional Flutter development with AI-powered agent coordination & intelligent parallel execution - Complete workflow system with crash recovery and state management by Appiq Solutions",
+  "name": "@appiq-solutions/ux-landing-page-generator",
+  "version": "1.0.0",
+  "description": "🎨 AI-powered landing page generator with modular components, professional templates (Cadence, Viper, Portfolite, Sonic, Refit, Landio), automated content generation, and conversion optimization using React, Tailwind CSS, and Framer Motion",
   "main": "bin/cli.js",
   "bin": {
-    "appiq-workflow": "bin/cli.js"
+    "ux-landing-generator": "bin/cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,26 +14,30 @@
     "prepare": "chmod +x bin/cli.js"
   },
   "keywords": [
-    "flutter",
-    "workflow",
-    "agent",
-    "development",
+    "landing-page",
+    "ux-design",
+    "react",
+    "tailwindcss",
+    "shadcn-ui",
+    "framer-motion",
+    "template-engine",
+    "ai-content-generation",
+    "conversion-optimization",
+    "responsive-design",
+    "cadence-template",
+    "viper-template",
+    "portfolite-template",
+    "sonic-template",
+    "refit-template",
+    "landio-template",
     "appiq",
     "claude",
-    "cursor",
-    "windsurf",
-    "trae",
-    "clean-architecture",
-    "feature-driven",
-    "ai-agents",
-    "coppa-compliance",
-    "testing-pyramid",
-    "mobile-development",
-    "state-management",
-    "cubit",
-    "bloc",
-    "domain-driven-design",
-    "mcp-integration"
+    "modern-web",
+    "saas-landing",
+    "agency-landing",
+    "portfolio-landing",
+    "animated-components",
+    "design-tokens"
   ],
   "author": {
     "name": "Appiq Solutions",
@@ -68,12 +72,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Viktor-Hermann/appiq-flutter-workflow.git"
+    "url": "git+https://github.com/Viktor-Hermann/ux-landing-page-generator.git"
   },
   "bugs": {
-    "url": "https://github.com/Viktor-Hermann/appiq-flutter-workflow/issues"
+    "url": "https://github.com/Viktor-Hermann/ux-landing-page-generator/issues"
   },
-  "homepage": "https://github.com/Viktor-Hermann/appiq-flutter-workflow#readme",
+  "homepage": "https://github.com/Viktor-Hermann/ux-landing-page-generator#readme",
   "funding": {
     "type": "paypal",
     "url": "https://paypal.me/vhermann"

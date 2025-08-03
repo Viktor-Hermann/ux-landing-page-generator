@@ -1,625 +1,295 @@
-# 🔒 Appiq Flutter Workflow v2.1.2 - Private Release
+# 🎨 UX Landing Page Generator
 
-**Professional Flutter development with AI-powered agent coordination, intelligent parallel execution, and independent agent mode.**
+> **AI-powered landing page generator with modular components, professional templates, automated content generation, and conversion optimization using React, Tailwind CSS, and Framer Motion.**
 
-[![Private Release](https://img.shields.io/badge/Release-Private-red.svg?style=flat-square)](https://github.com/Viktor-Hermann/appiq-flutter-workflow/releases)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Support Development](https://img.shields.io/badge/Support-PayPal-ff3f59.svg?style=flat-square&logo=paypal)](https://paypal.me/vhermann)
+Complete system with 6 professional template styles, intelligent content generation, responsive design, and advanced animations.
 
-## 🌟 What's New in v2.1.2
+[![Version](https://img.shields.io/npm/v/@appiq-solutions/ux-landing-page-generator.svg)](https://www.npmjs.com/package/@appiq-solutions/ux-landing-page-generator)
+[![License](https://img.shields.io/npm/l/@appiq-solutions/ux-landing-page-generator.svg)](LICENSE)
+[![GitHub Actions](https://github.com/appiq-solutions/ux-landing-page-generator/workflows/CI/badge.svg)](https://github.com/appiq-solutions/ux-landing-page-generator/actions)
 
-### 🧠 **Context-Resilient Development**
-- **Context Management**: Full state preservation across IDE context clears
-- **Seamless Continuation**: Use `/clear` anytime - agents resume exactly where you left off
-- **State-Based Recovery**: Complete development history preserved in file system
-- **Zero Context Dependency**: All workflow state independent of IDE context
+## ✨ Features
 
-## 🌟 Previous Features (v2.1.0)
-
-### 🎯 **Independent Agent Mode**
-- **Direct Agent Access**: Call any agent directly for specific tasks (`@ui-agent`, `@cubit-agent`, etc.)
-- **Smart Feature Detection**: Agents automatically find related features to update
-- **Lightweight Tracking**: Full progress tracking without workflow overhead
-- **Seamless Escalation**: Automatic upgrade to full workflow when complexity requires it
-
-### 🧠 **Intelligent Agent Coordination**
-- **Advanced Parallel Execution**: UI+Domain and Security+Test agents run simultaneously
-- **Dynamic Conflict Resolution**: Automatic detection and resolution of agent conflicts
-- **Event-Driven Coordination**: Real-time agent communication and handoff optimization
-- **Resource Load Balancing**: Intelligent allocation of system resources
-
-### 🛡️ **Crash Recovery & State Management**
-- **100% Crash Recovery**: Never lose progress due to IDE crashes or interruptions
-- **Automatic State Preservation**: Continuous backup every 5 minutes with zero data loss
-- **Recovery Checkpoints**: Manual and automatic checkpoint creation at critical phases
-- **State Validation**: Comprehensive integrity checking and corruption detection
+- **🎯 Professional Templates**: 6 proven template styles (Cadence, Viper, Portfolite, Sonic, Refit, Landio)
+- **🤖 AI Content Generation**: Automated headlines, features, testimonials, and copy optimization
+- **🧩 Modular Components**: Reusable React components for hero sections, features, pricing, testimonials
+- **📱 Responsive Design**: Mobile-first approach with touch-optimized interactions
+- **🎬 Advanced Animations**: Framer Motion integration with scroll-reveal, hover effects, and parallax
+- **🎨 Design Token System**: Comprehensive theming with CSS custom properties
+- **📊 Conversion Optimization**: A/B testing variants and personalization engine
+- **⚡ Performance Optimized**: Fast loading with optimized animations and lazy loading
 
 ## 🚀 Quick Start
 
-### 🔒 Private Installation
-
-**This is now a private package for controlled distribution.**
-
-See [PRIVATE-INSTALLATION.md](PRIVATE-INSTALLATION.md) for detailed setup instructions.
-
-#### **Quick Setup:**
-
-1. **Configure GitHub Packages:**
-   ```bash
-   echo "@viktor-hermann:registry=https://npm.pkg.github.com" >> ~/.npmrc
-   echo "//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN" >> ~/.npmrc
-   ```
-
-2. **Install:**
-   ```bash
-   npm install -g @viktor-hermann/appiq-flutter-workflow
-   ```
-
-3. **Or install directly from repository:**
-   ```bash
-   npm install -g https://github.com/Viktor-Hermann/appiq-flutter-workflow.git
-   ```
-
-### Option 1: Independent Agent Usage (NEW!)
-
-Work directly with any agent for specific tasks:
+### Installation
 
 ```bash
-# UI improvements
-@ui-agent "Make the login screen more modern and add dark mode support"
+# Via npm
+npm install -g @appiq-solutions/ux-landing-page-generator
 
-# State management updates  
-@cubit-agent "Add loading states and better error handling to the user profile"
-
-# Domain logic enhancements
-@domain-agent "Add validation rules for user registration"
+# Via GitHub Packages
+npm install -g @appiq-solutions/ux-landing-page-generator --registry=https://npm.pkg.github.com
 ```
 
-**Agent will automatically:**
-1. 🔍 Find related features in your project
-2. 🎯 Offer appropriate approach (standalone, feature update, or full workflow)
-3. 📊 Track all work with complete history
-4. 🔄 Coordinate with other agents when needed
-
-### Option 2: Full Workflow Mode
-
-For complete feature development:
+### Usage
 
 ```bash
-# Initialize workflow system
-npx @viktor-hermann/appiq-flutter-workflow install
+# Generate a new landing page
+ux-landing-generator create
 
-# Create new feature
-npx @viktor-hermann/appiq-flutter-workflow create-feature user-authentication
+# Use with Claude/AI assistant
+ux-landing-generator create --ai-mode
 
-# Start feature development with FeatureMaster
-@feature-manager "Start development for user-authentication feature"
+# Generate with specific template
+ux-landing-generator create --template=cadence --industry=saas
 ```
 
-## 🧠 Context Management & State Preservation
+## 📋 Template Styles
 
-### 🔄 **Context-Resilient Development**
+### 🌟 Cadence Style
+- **Best for**: SaaS, Tech, AI, Fintech
+- **Design**: Dark theme with neon accents, glassmorphism effects
+- **Personality**: Professional, innovative, cutting-edge
 
-The Appiq Flutter Workflow is completely **context-independent** - you can use `/clear` anytime without losing progress!
+### ⚡ Viper Style  
+- **Best for**: Agency, Creative, Marketing, Sports
+- **Design**: Bold typography, high contrast, vibrant colors
+- **Personality**: Bold, energetic, confident, disruptive
 
-#### **Why This Matters:**
-When IDE context gets full (~25% remaining), you can safely clear it:
+### 🎨 Portfolite Style
+- **Best for**: Portfolio, Creative, Design, Photography
+- **Design**: Artistic layouts, grid masonry, image galleries
+- **Personality**: Creative, artistic, sophisticated, elegant
 
-```bash
-# When context gets low:
-/clear
+### 🏢 Sonic Style
+- **Best for**: Corporate, Consulting, Professional Services
+- **Design**: Clean and professional, balanced typography
+- **Personality**: Professional, trustworthy, clean, reliable
 
-# Immediately continue exactly where you left off:
-@ui-agent "Continue work on user-authentication feature"
+### 💪 Refit Style
+- **Best for**: Fitness, Health, Wellness, Sports
+- **Design**: Energetic colors, action-oriented design
+- **Personality**: Energetic, motivating, healthy, active
 
-# Agent responds with full context awareness:
-"🎨 Hi! I see you're working on user-authentication. 
-Status: 65% complete, UI-Phase active.
-Last activity: Login screen responsive design
-Next step: Dark mode implementation
-Shall I continue from there?"
+### 🚀 Landio Style
+- **Best for**: SaaS, B2B, Software, Platforms
+- **Design**: Conversion-optimized, feature-rich layouts
+- **Personality**: Business-focused, conversion-driven
+
+## 🛠 Component Library
+
+### Hero Components
+```jsx
+// Cadence Hero with neon effects
+<CadenceHero 
+  headline="Revolutionary AI Solutions"
+  subheadline="Transform your business with cutting-edge AI"
+  ctaPrimary="Start Your Journey"
+  ctaSecondary="Watch Demo"
+/>
+
+// Viper Hero with bold design
+<ViperHero 
+  headline="DOMINATE YOUR MARKET"
+  subheadline="Unleash your potential with our proven system"
+  ctaPrimary="GET STARTED NOW"
+  ctaSecondary="SEE RESULTS"
+/>
 ```
 
-#### **How State Preservation Works:**
-
-### 📊 **Automatic State Management**
-- **Every 5 minutes**: Automatic state backup
-- **At major milestones**: Recovery checkpoints
-- **All agent activities**: Logged in permanent files
-- **Complete history**: Never lost, always accessible
-
-### 💾 **State Files Structure**
-```
-docs/
-├── features/
-│   ├── my-feature.md              # Current status & progress
-│   ├── my-feature_state.json      # Complete state backup
-│   └── feature-template.md        # Template for new features
-├── tasks/
-│   ├── my-feature_tasks.md        # Task breakdown & assignments
-│   └── my-feature_history.md      # Complete development history
-└── independent-sessions/
-    ├── ui-agent_12345.json        # Active sessions
-    └── activity-log.json          # Central activity log
+### Feature Cards
+```jsx
+<ResponsiveFeatureCards 
+  template="cadence"
+  features={[
+    {
+      title: "Smart Automation",
+      description: "AI-powered workflow automation",
+      icon: "🤖"
+    },
+    // ... more features
+  ]}
+/>
 ```
 
-### 🔄 **Context Recovery Commands**
-
-#### **Immediate Recovery:**
-```bash
-# After /clear, agents automatically restore from:
-@feature-manager "*restore-state my-feature"
-@ui-agent "*find-related-feature user-authentication" 
-@cubit-agent "*continue-previous-work"
+### Animated Sections
+```jsx
+<AnimatedSection
+  template="cadence"
+  animation="scrollReveal"
+  stagger={0.1}
+>
+  <FeatureGrid features={features} />
+</AnimatedSection>
 ```
 
-#### **Manual State Operations:**
-```bash
-# Save current state manually
-@feature-manager "*save-state my-feature"
+## 🎨 Design System
 
-# Check system health
-@feature-manager "*health-check my-feature"
+### Color Tokens
+```css
+/* Cadence Theme */
+:root[data-theme="cadence"] {
+  --primary-bg: #000000;
+  --accent-color: #3064FF;
+  --text-primary: #ffffff;
+  --hero-gradient: linear-gradient(135deg, #3064FF 0%, #8b5cf6 100%);
+}
 
-# Create recovery checkpoint
-@feature-manager "*create-checkpoint my-feature"
-
-# Restore from specific checkpoint
-@feature-manager "*restore-state my-feature checkpoint_123"
+/* Viper Theme */
+:root[data-theme="viper"] {
+  --primary-bg: #ffffff;
+  --accent-color: #ff462e;
+  --text-primary: #000000;
+  --hero-gradient: linear-gradient(135deg, #ff462e 0%, #f59e0b 100%);
+}
 ```
 
-### 🎯 **Best Practices for Context Management**
-
-#### **🟢 Recommended Workflow:**
-1. **Work normally** - state auto-saves every 5 minutes
-2. **When context ~30%** - Use `/clear` freely
-3. **Continue immediately** - `@agent "continue my-feature"`
-4. **Full restoration** - All progress, history, and next steps preserved
-
-#### **⚡ Pro Tips:**
-```bash
-# Create manual checkpoint before major changes
-@feature-manager "*save-state my-feature"
-
-# Check feature status anytime
-@feature-manager "*check-status my-feature"
-
-# View complete development history
-# Read: docs/tasks/my-feature_history.md
-
-# Monitor system health
-@feature-manager "*health-check"
+### Typography Scale
+```css
+/* Fluid Typography */
+--text-hero: clamp(3rem, 8vw, 6rem);
+--text-h2: clamp(2rem, 5vw, 3.5rem);
+--text-h3: clamp(1.5rem, 4vw, 2.25rem);
 ```
 
-### 🛡️ **Zero Data Loss Guarantee**
-- **IDE crashes** ✅ Full recovery
-- **Context overflows** ✅ Seamless continuation  
-- **System interruptions** ✅ Complete restoration
-- **Agent handoffs** ✅ Perfect state transfer
-- **Complex workflows** ✅ Full coordination preserved
+## 🤖 AI Content Generation
 
-### 📈 **State-Based Benefits**
-- **30% faster development** - No context management overhead
-- **100% crash recovery** - Never lose work again
-- **Seamless collaboration** - Share exact state with team
-- **Perfect documentation** - Complete audit trail
-- **Enterprise reliability** - Production-ready stability
+The generator includes intelligent content creation based on:
 
-## 🎯 Agent Capabilities
+- **Industry Analysis**: Tailored messaging for SaaS, Agency, Fitness, etc.
+- **Audience Targeting**: B2B vs B2C optimized copy
+- **Conversion Psychology**: Proven copywriting patterns
+- **Template Adaptation**: Style-specific tone and voice
 
-If this workflow saves you time and helps you build better Flutter apps, consider supporting the development:
+### Example Generated Content
 
-[![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=for-the-badge&logo=paypal)](https://paypal.me/vhermann)
+```javascript
+// Input
+const config = {
+  industry: "SaaS",
+  product: "FlowManager",
+  targetAudience: "small businesses"
+};
 
-Your support helps maintain and improve this open-source project! 🚀
-
----
-
-## 🎯 Overview
-
-Appiq Flutter Workflow is a comprehensive, agent-based development system that automates Flutter feature development using specialized AI agents. Each agent handles a specific layer of Clean Architecture, ensuring consistent, high-quality, and maintainable Flutter applications.
-
-## 🤖 Agent Ecosystem
-
-### 🎭 Orchestrator (Conductor)
-**Master workflow controller and quality assurance manager**
-- Coordinates all specialized agents
-- Manages feature lifecycle from conception to deployment
-- Enforces quality gates and architectural compliance
-- Provides comprehensive status tracking and reporting
-
-### 📋 PO Agent (Phoenix)
-**Product Owner and requirements specialist**
-- Transforms business requirements into technical specifications
-- Creates detailed task breakdowns across all architectural layers
-- Manages stakeholder coordination and communication
-- Validates feature readiness and business value
-
-### 🎨 UI Agent (Maya)
-**Flutter UI/UX design specialist**
-- Material Design 3 implementation and theming
-- Responsive design for all devices and screen sizes
-- Accessibility compliance (WCAG 2.1 AA standards)
-- Multi-language support and localization
-- Performance-optimized widget architectures
-
-### 🧠 Cubit Agent (Alex)
-**State management and business logic specialist**
-- Cubit/BLoC pattern implementation and architecture
-- Immutable state classes with comprehensive error handling
-- Performance-optimized reactive programming
-- Business logic coordination between UI and Domain layers
-
-### ⚙️ Domain Agent (Jordan)
-**Clean Architecture domain layer architect**
-- Framework-independent business logic implementation
-- Immutable business entities with comprehensive validation
-- Single-responsibility use cases with proper error handling
-- Repository interfaces for data access abstraction
-
-### 🗄️ Data Agent (Sam)
-**Backend integration and data layer specialist**
-- Repository pattern implementation with error handling
-- API integration with security, caching, and offline support
-- Local storage optimization (Hive, SQLite, secure storage)
-- MCP service integration (Firebase, Supabase, AWS, etc.)
-
-### 🔐 Security Agent (Cipher)
-**Security and compliance specialist**
-- COPPA compliance validation and implementation
-- Data protection and encryption for sensitive information
-- Secure authentication and authorization systems
-- Privacy controls and regulatory compliance (GDPR, CCPA)
-
-### 🧪 Test Agent (Trinity)
-**Testing and quality assurance specialist**
-- Testing Pyramid implementation (70% Unit, 20% Widget, 10% Integration)
-- Comprehensive test coverage and quality assurance
-- Performance testing and benchmark validation
-- Security testing and accessibility compliance verification
-
-## 🚀 Installation
-
-### Prerequisites
-- Node.js 14.0.0 or higher
-- Flutter SDK (latest stable version)
-- Your preferred IDE (Claude Desktop, Cursor, Windsurf, or Trae)
-
-### Install via NPX
-
-```bash
-# Navigate to your Flutter project directory
-cd your-flutter-project
-
-# Install Appiq Flutter Workflow
-npx @viktor-hermann/appiq-flutter-workflow install
+// Generated Output
+{
+  headline: "Transform Your Workflow Efficiency by 300%",
+  subheadline: "The complete workflow management solution trusted by 10,000+ businesses",
+  features: [
+    {
+      title: "Smart Automation",
+      description: "Reduce manual work by 80% with intelligent automation",
+      icon: "⚡"
+    }
+  ]
+}
 ```
 
-### Or install globally
+## 📱 Responsive Design
 
-```bash
-# Install globally for easier access
-npm install -g @viktor-hermann/appiq-flutter-workflow
+All components are built with mobile-first responsive design:
 
-# Then use anywhere
-appiq-workflow install
+- **Breakpoints**: xs, sm, md, lg, xl, 2xl
+- **Touch Optimized**: 44px minimum touch targets
+- **Performance**: GPU-accelerated animations
+- **Accessibility**: WCAG 2.1 AA compliant
+
+## 🎬 Animation System
+
+Built on Framer Motion with template-specific animations:
+
+```jsx
+// Scroll-triggered animations
+const { ref, controls } = useScrollAnimation();
+
+<motion.div
+  ref={ref}
+  animate={controls}
+  variants={animationVariants.cadence.scrollReveal}
+>
+  Content here
+</motion.div>
 ```
 
-### Interactive Installation
-The installer will guide you through:
-1. **IDE Selection**: Choose your development environment(s)
-2. **Agent Installation**: Automatically installs all 8 specialized agents
-3. **Project Setup**: Creates feature management structure
-4. **Documentation**: Sets up feature tracking and history system
+## 📊 Performance
 
-## 📁 Project Structure
-
-After installation, your project will have:
-
-```
-your-flutter-project/
-├── .claude/agents/          # Claude Desktop agents
-├── .cursor/rules/           # Cursor IDE agents  
-├── .windsurf/rules/         # Windsurf IDE agents
-├── .trae/rules/             # Trae IDE agents
-├── docs/
-│   └── features/           # Feature documentation and tracking
-│       ├── feature-name.md        # Feature status and requirements
-│       └── feature-name_history.md # Complete development history
-├── lib/
-│   ├── features/           # Feature-based development structure
-│   │   └── feature-name/
-│   │       ├── data/       # Data layer (repositories, datasources, models)
-│   │       ├── domain/     # Domain layer (entities, usecases, repositories)
-│   │       └── presentation/ # Presentation layer (pages, widgets, cubit)
-│   ├── shared/             # Shared components and utilities
-│   └── core/               # Core application infrastructure
-└── test/                   # Comprehensive testing structure
-    ├── unit/               # Unit tests (70%)
-    ├── widget/             # Widget tests (20%)
-    └── integration/        # Integration tests (10%)
-```
-
-## 🔄 Workflow Process
-
-### 1. Feature Creation
-```bash
-# Create a new feature
-npx @viktor-hermann/appiq-flutter-workflow create-feature livestream
-
-# Or manually create in docs/features/livestream.md
-```
-
-### 2. Agent Workflow Chain
-```
-PO Agent → UI Agent → Cubit Agent → Domain Agent → Data Agent → Security Agent → Test Agent
-```
-
-### 3. Status Tracking
-Each agent updates the feature status:
-```yaml
----
-name: Livestream
-ui: done
-domain: in_progress  
-data: open
-security: open
-test: open
-status: in_progress
----
-```
-
-### 4. Quality Gates
-- **Architecture Compliance**: Clean Architecture principles enforced
-- **Code Quality**: DRY, SOLID, clean code standards
-- **Test Coverage**: Minimum 90% coverage requirement
-- **Security Compliance**: COPPA and privacy standards
-- **Performance**: Optimization and benchmark validation
-
-## 🎯 Feature Development Example
-
-### Creating a Livestream Feature
-
-1. **Create Feature Documentation**:
-```markdown
----
-name: Livestream
-ui: open
-domain: open
-data: open
-security: open
-test: open
-status: open
----
-
-# Livestream Feature
-
-I want a livestream function like TikTok where users can:
-- Swipe up/down to navigate between streams
-- Comment via bottom sheet
-- Like with animation and counter
-- Bookmark streams for later viewing
-```
-
-2. **Start Orchestrator**: Load the Orchestrator agent in your IDE
-3. **Begin Workflow**: The Orchestrator coordinates all agents automatically
-4. **Monitor Progress**: Track status in feature documentation
-5. **Quality Validation**: All agents enforce quality gates
-6. **Deployment Ready**: Complete feature with comprehensive testing
-
-## 🛠 Commands
-
-### CLI Commands
-```bash
-# Install workflow system
-npx @viktor-hermann/appiq-flutter-workflow install
-
-# Check installation status  
-npx @viktor-hermann/appiq-flutter-workflow status
-
-# Create new feature
-npx @viktor-hermann/appiq-flutter-workflow create-feature <feature-name>
-
-# Show help
-npx @viktor-hermann/appiq-flutter-workflow --help
-```
-
-### Agent Commands (in IDE)
-All agents support commands with `*` prefix:
-```
-*help              # Show available commands
-*start-feature     # Begin feature development (Orchestrator)
-*analyze-feature   # Analyze requirements (PO Agent)
-*design-ui         # Create UI implementation (UI Agent)
-*implement-cubit   # Add state management (Cubit Agent)
-*create-entities   # Build domain layer (Domain Agent)
-*setup-api         # Implement data layer (Data Agent)
-*validate-security # Add security measures (Security Agent)
-*run-tests         # Execute test suite (Test Agent)
-```
-
-## 🏗 Architecture Principles
-
-### Clean Architecture Layers
-- **Presentation Layer**: UI, widgets, state management
-- **Domain Layer**: Business logic, entities, use cases
-- **Data Layer**: Repositories, data sources, external APIs
-
-### Quality Standards
-- **DRY**: No code duplication, reusable components
-- **Readable**: Self-documenting code and clear structure
-- **Maintainable**: Modular architecture and proper separation
-- **Performant**: Optimized for mobile constraints
-- **Testable**: Comprehensive testing coverage
-
-### Development Patterns
-- **Feature-Driven**: Organized by business features
-- **Immutable State**: All state objects are immutable
-- **Dependency Injection**: Proper DI for testability
-- **Error Handling**: Comprehensive error management
-- **Localization**: Multi-language support by default
-
-## 🔐 Security & Compliance
-
-### COPPA Compliance
-- Age-appropriate design patterns
-- Parental consent mechanisms
-- Minimal data collection for minors
-- Secure data storage and transmission
-
-### Data Protection
-- Encryption at rest and in transit
-- Secure authentication and authorization
-- Privacy controls and user consent
-- GDPR and CCPA compliance
-
-### Security Best Practices
-- Input validation and sanitization
-- Secure API communication
-- Vulnerability scanning and testing
-- Regular security audits
-
-## 📊 Testing Strategy
-
-### Testing Pyramid (70/20/10)
-- **70% Unit Tests**: Business logic and domain layer
-- **20% Widget Tests**: UI interactions and components
-- **10% Integration Tests**: Complete user flows
-
-### Quality Requirements
-- Minimum 90% test coverage
-- All tests passing before deployment
-- Performance benchmarks met
-- Security tests validated
-- Accessibility compliance verified
-
-## 🤝 MCP Integrations
-
-The workflow supports various MCP (Model Context Protocol) services:
-
-- **Fetcher MCP**: Advanced data fetching and caching
-- **Sequential Thinking MCP**: Complex workflow analysis
-- **Memory MCP**: Context preservation across agents
-- **Context7 MCP**: Enhanced code analysis
-- **Supabase MCP**: Backend as a Service
-- **Firebase MCP**: Google Firebase services
-- **Puppeteer MCP**: Automated testing and screenshots
-
-## 📖 Documentation
-
-### Automatic Documentation
-- Feature development history tracking
-- Architectural decision records
-- Quality gate compliance reports
-- Test coverage and performance metrics
-
-### Generated Files
-- `docs/features/feature-name.md`: Status and requirements
-- `docs/features/feature-name_history.md`: Complete development history
-- Test reports and coverage analysis
-- Security audit and compliance reports
+- **Core Web Vitals**: Optimized for LCP, FID, CLS
+- **Bundle Size**: Code splitting and lazy loading
+- **Image Optimization**: WebP with fallbacks
+- **Critical CSS**: Inline critical styles
 
 ## 🔧 Configuration
 
-### Environment Variables
-```bash
-APPIQ_WORKFLOW_MODE=production    # Development mode
-APPIQ_TEST_COVERAGE_MIN=90        # Minimum test coverage
-APPIQ_COPPA_COMPLIANCE=true       # COPPA compliance enforcement
-APPIQ_SECURITY_SCAN=true          # Security scanning enabled
+Landing pages are configured via JSON:
+
+```json
+{
+  "template": { "id": "cadence" },
+  "company": {
+    "name": "TechFlow",
+    "industry": "SaaS"
+  },
+  "product": {
+    "name": "FlowManager",
+    "category": "Workflow Management"
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "variant": "centered"
+    }
+  ]
+}
 ```
 
-### IDE Configuration
-Each IDE receives optimized agent configurations:
-- **Claude Desktop**: Advanced AI coding assistance
-- **Cursor**: AI-first development environment
-- **Windsurf**: Collaborative AI coding
-- **Trae**: Enhanced development workflow
+## 🚀 Deployment
 
-## 🚦 Status Indicators
+Generate deployable React applications:
 
-### Feature Status Levels
-- **open**: Ready for development planning
-- **in_progress**: Active development in progress
-- **done**: Completed and deployment-ready
+```bash
+# Generate and build
+ux-landing-generator create --build
 
-### Agent Status Tracking
-- **pending**: Not yet started
-- **in_progress**: Currently working
-- **done**: Completed successfully
+# Deploy to Vercel
+ux-landing-generator deploy --platform=vercel
 
-### Quality Gate Status
-- **architecture_compliance**: Clean Architecture verified
-- **code_quality**: Quality standards met
-- **test_coverage**: Coverage requirements achieved
-- **security_compliance**: Security standards verified
-- **performance_validated**: Performance benchmarks met
+# Deploy to Netlify  
+ux-landing-generator deploy --platform=netlify
+```
 
-## 🤔 FAQ
+## 📖 Documentation
 
-**Q: Can I use this with existing Flutter projects?**
-A: Yes! The workflow integrates with existing projects and follows established patterns.
+- [Template Guide](docs/templates.md)
+- [Component API](docs/components.md)
+- [Animation System](docs/animations.md)
+- [Configuration Reference](docs/configuration.md)
+- [Deployment Guide](docs/deployment.md)
 
-**Q: Do I need all agents for small features?**
-A: The Orchestrator will activate only necessary agents based on feature requirements.
+## 🤝 Contributing
 
-**Q: How does COPPA compliance work?**
-A: The Security Agent automatically validates and implements COPPA requirements for child-facing features.
-
-**Q: Can I customize the workflow?**
-A: Yes, agents can be customized and workflow patterns can be adapted to your team's needs.
-
-**Q: What happens if an agent fails?**
-A: The Orchestrator provides failure recovery, rollback capabilities, and detailed error reporting.
-
-## 💖 Support This Project
-
-If Appiq Flutter Workflow helps you build better Flutter apps faster, consider supporting its development:
-
-[![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=for-the-badge&logo=paypal)](https://paypal.me/vhermann)
-
-Your support helps:
-- 🚀 Maintain and improve the workflow system
-- 🤖 Add new agent capabilities and integrations
-- 📚 Create better documentation and tutorials
-- 🛠️ Provide community support and bug fixes
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/amazing-feature`
+3. Commit changes: `git commit -m 'Add amazing feature'`
+4. Push to branch: `git push origin feature/amazing-feature`
+5. Open a Pull Request
 
 ## 📄 License
 
 MIT License - see [LICENSE](LICENSE) file for details.
 
-**Copyright (c) 2024 Appiq Solutions**
-
-## 🤝 Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-## 📞 Support & Community
-
-- **Issues**: Report bugs and request features
-- **Documentation**: Comprehensive guides and examples
-- **Community**: Join discussions and get support
-- **GitHub Repository**: [Viktor-Hermann/appiq-flutter-workflow](https://github.com/Viktor-Hermann/appiq-flutter-workflow)
-- **Private Package**: Available via GitHub Packages and direct installation
-
-## 🏢 About Appiq Solutions
-
-Appiq Solutions specializes in professional Flutter development workflows and AI-powered development tools. We create solutions that help developers build better apps faster.
-
-- **Website**: [appiq-solutions.com](https://appiq-solutions.com)
-
 ## 🙏 Acknowledgments
 
-- Flutter team for the amazing framework
-- Clean Architecture principles by Robert C. Martin
-- Material Design team at Google
-- Open source Flutter community
-- All contributors and supporters
+- Template designs inspired by Framer community templates
+- Built with modern web technologies and best practices
+- Optimized for conversion and user experience
+
+## 💬 Support
+
+- 📧 Email: info@appiq-solutions.com
+- 🐛 Issues: [GitHub Issues](https://github.com/appiq-solutions/ux-landing-page-generator/issues)
+- 💡 Feature Requests: [GitHub Discussions](https://github.com/appiq-solutions/ux-landing-page-generator/discussions)
 
 ---
 
-**Built with ❤️ by [Appiq Solutions](https://appiq-solutions.com)**
-
-*Transform your Flutter development with AI-powered workflow automation*
-
-[![Donate](https://img.shields.io/badge/Support_Development-PayPal-ff3f59.svg?style=for-the-badge&logo=paypal)](https://paypal.me/vhermann)
+**Made with ❤️ by [Appiq Solutions](https://appiq-solutions.com)**
