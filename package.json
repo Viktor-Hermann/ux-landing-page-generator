@@ -1,0 +1,85 @@
+{
+  "name": "@appiq/flutter-workflow",
+  "version": "2.1.2",
+  "description": "🚀 Professional Flutter development with AI-powered agent coordination & intelligent parallel execution - Complete workflow system with crash recovery and state management by Appiq Solutions",
+  "main": "bin/cli.js",
+  "bin": {
+    "appiq-workflow": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node bin/cli.js",
+    "build": "echo 'No build needed for CLI tool'",
+    "prepublishOnly": "chmod +x bin/cli.js",
+    "prepare": "chmod +x bin/cli.js"
+  },
+  "keywords": [
+    "flutter",
+    "workflow",
+    "agent",
+    "development",
+    "appiq",
+    "claude",
+    "cursor",
+    "windsurf",
+    "trae",
+    "clean-architecture",
+    "feature-driven",
+    "ai-agents",
+    "coppa-compliance",
+    "testing-pyramid",
+    "mobile-development",
+    "state-management",
+    "cubit",
+    "bloc",
+    "domain-driven-design",
+    "mcp-integration"
+  ],
+  "author": {
+    "name": "Appiq Solutions",
+    "email": "info@appiq-solutions.com",
+    "url": "https://appiq-solutions.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^9.4.1",
+    "inquirer": "^8.2.5",
+    "fs-extra": "^11.1.1",
+    "path": "^0.12.7",
+    "ora": "^5.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0"
+  },
+  "files": [
+    "bin/",
+    "agents/",
+    "templates/",
+    "config/",
+    "lib/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/appiq-flutter-workflow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/appiq-solutions/flutter-workflow/issues"
+  },
+  "homepage": "https://github.com/appiq-solutions/flutter-workflow#readme",
+  "funding": {
+    "type": "paypal",
+    "url": "https://paypal.me/vhermann"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
